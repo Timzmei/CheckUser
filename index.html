@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проверка привилегий пользователя</title>
+</head>
+<body>
+  <h1>Проверка привилегий пользователя</h1>
+  <form action="/check" method="post">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+    <button type="submit">Проверить</button>
+  </form>
+
+  <!-- Результат проверки привилегий -->
+  <div id="result"></div>
+
+  <script>
+    // Функция для отображения результата проверки и кнопки "Назад"
+    function showResult(message) {
+      var resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `<h1>${message}</h1><button onclick="window.location.href = '/'">Назад</button>`;
+
+      
+    }
+  </script>
+</body>
+</html>

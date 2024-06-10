@@ -1,0 +1,17 @@
+{
+    "name": "privilege-checker",
+    "version": "1.0.0",
+    "description": "Node.js web application to check user privileges using Node-Addon-API and WinAPI",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "open": "^8.0.9"
+    },
+    "devDependencies": {
+        "node-addon-api": "^3.2.1"
+    },
+    "gypfile": true
+}
